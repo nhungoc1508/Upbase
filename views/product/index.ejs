@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %>
+    <div class="text-center">
+        <h6 class="display-6 section-title">All items</h6>
+    </div>
+    <div class="row my-3">
+        <form class="col-12 d-flex justify-content-center" action="/new" method="GET">
+            <button class="btn custom-btn">New item</button>
+        </form>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let product of products) { %>
+                <tr id="<%=product._id%>" class="<%=product.stock > 10 ? '' : 'table-danger'%>">
+                    <td class="text-capitalize">
+                        <%= product.name %>
+                    </td>
+                    <td>
+                        <%=product.price%>
+                    </td>
+                    <td>
+                        <%=product.stock%>
+                    </td>
+                    <td>
+                        <a href="/<%=product._id%>">
+                            See details
+                        </a>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
