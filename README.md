@@ -11,6 +11,10 @@ Created for Shopify Backend Developer Intern Challenge 2022 ([link to task descr
 - User can edit items.
 - User can delete items.
 
+## Frameworks and libraries
+
+NodeJS (Express), MongoDB, and Bootstrap (for minor UI).
+
 ## Demo video
 
 TBA
