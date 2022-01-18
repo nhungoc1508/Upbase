@@ -19,7 +19,7 @@ const productRoutes = require('./routes/products')
 const ExpressError = require('./utils/ExpressError');
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')))
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
