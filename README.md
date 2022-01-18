@@ -17,7 +17,7 @@ NodeJS (Express), MongoDB, and Bootstrap (for minor UI).
 
 ## Demo video
 
-TBA
+https://user-images.githubusercontent.com/29029881/150002479-67c25646-31b2-425a-a738-1929b55fcaa2.mp4
 
 ## Hosted page
 
