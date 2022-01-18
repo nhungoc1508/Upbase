@@ -10,6 +10,8 @@ router.route('/')
 
 router.get('/new', products.renderNewProduct);
 
+router.get('/export', products.exportProducts);
+
 router.route('/:id')
     .get(catchAsync(products.showProduct))
     .post(catchAsync(products.addProduct))

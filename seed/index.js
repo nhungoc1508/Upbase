@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const products = require('./products');
 const Product = require('../models/product');
 
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/upbase';
 
 mongoose.connect(dbUrl, {
