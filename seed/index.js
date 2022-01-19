@@ -24,7 +24,7 @@ let num_items
 if (isNaN(parseInt(process.argv[2]))) {
     num_items = 20
 } else {
-    num_items = parseInt(process.argv[2])
+    num_items = Math.min(parseInt(process.argv[2]), products.length)
 }
 
 const seedDB = async () => {
