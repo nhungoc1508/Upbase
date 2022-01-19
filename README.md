@@ -62,6 +62,16 @@ $ node app.js
 
 The app will run on http://localhost:3000/.
 
+### Populate local database with placeholder products
+`seed/products.js` contains a number of placeholder products for a grocery business.
+
+Run the following command before running the app:
+```shell
+$ node seed/index.js [number of products to add]
+```
+
+The program will populate the local MongoDB Upbase database with a number of random seed products (you can specified the number of products in the command line, or leave it blank, in which case a default number of 20 products will be added).
+
 ## References and credits
 
 Favicon: <a href="https://iconscout.com/icons/shopping" target="_blank">Shopping Icon</a> by <a href="https://iconscout.com/contributors/chamedesign" target="_blank">Chamestudio</a>
