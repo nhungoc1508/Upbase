@@ -43,7 +43,7 @@ Installation guides: https://docs.mongodb.com/manual/tutorial/install-mongodb-on
 #### Windows
 Installation guides: https://zarkom.net/blogs/how-to-install-mongodb-for-development-in-windows-3328
 
-### Run the app localy
+### Run the app locally
 Clone the project repository and navigate to the folder:
 ```shell
 $ git clone https://github.com/nhungoc1508/Upbase.git
