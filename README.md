@@ -25,7 +25,42 @@ The project is deployed using Heroku and is available at https://upbase-upbase.h
 
 ## Run locally
 
-TBA
+### Install NodeJS
+
+Install the recommended file from https://nodejs.org/en/.
+
+Verify installation:
+
+```shell
+$ node --version
+>> v16.13.2
+```
+
+### Install MongoDB Community Edition
+#### MacOS
+Installation guides: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+
+#### Windows
+Installation guides: https://zarkom.net/blogs/how-to-install-mongodb-for-development-in-windows-3328
+
+### Run the app localy
+Clone the project repository and navigate to the folder:
+```shell
+$ git clone https://github.com/nhungoc1508/Upbase.git
+$ cd Upbase
+```
+
+Install all dependencies:
+```shell
+$ npm install
+```
+
+Run the app:
+```shell
+$ node app.js
+```
+
+The app will run on http://localhost:3000/.
 
 ## References and credits
 
